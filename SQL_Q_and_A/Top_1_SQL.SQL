@@ -1,13 +1,14 @@
 📝 Question 1: 
 "As a data analyst for a retail chain, you are tasked to find out the total product sold quantity of the store which is located at Bangalore."
 
-Solution1: 
+Solution1:(
 SELECT s.store_name, SUM(sl.quantity) AS total_product_sold
 FROM product_stores P
 JOIN product_sales S 
 ON P.store_id = S.store_id
 WHERE s.city = 'Bangalore'
 GROUP BY P.store_name;
+)
 
 
 "This SQL query retrieves the total quantity of products sold by each store located in Bangalore.
