@@ -1,7 +1,9 @@
 📝 Question 16: 
 """Imagine you are a data analyst at Atliq Exclusive. Your task is to analyze the monthly gross sales amount for the customer "Atliq Exclusive." This analysis will help identify low and high-performing months, enabling strategic decision-making."""
 
-Solution 16: SELECT 
+
+Solution 16: 
+SELECT 
  MONTH(f.date) AS month,
  MONTHNAME(f.date) AS month_name,
  f.fiscal_year AS fiscal_year,
