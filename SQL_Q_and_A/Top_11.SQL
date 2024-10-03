@@ -2,6 +2,7 @@
 """you are a data analyst at Atliq Exclusive. Your task is to identify the products with the highest and lowest manufacturing costs. This information is crucial for optimizing cost-efficiency and pricing strategies across the product line."""
 
 Solution 11: 
+
 SELECT p.product,p.product_code,f.manufacturing_cost 
 FROM fact_manufacturing_cost f 
 JOIN dim_product p ON f.product_code=p.product_code
