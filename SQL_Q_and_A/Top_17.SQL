@@ -1,7 +1,8 @@
 📝 Question 17: 
 """You are tasked with identifying the percentage increase in unique products between 2021 and 2020. This information will be used to evaluate product diversification over the years."""
 
-Solution 17: SELECT 
+Solution 17: 
+SELECT 
  unique_product_count_2020 AS unique_product_2020, 
  unique_product_count_2021 AS unique_product_2021, 
  ((unique_product_count_2021 - unique_product_count_2020) / unique_product_count_2020 * 100) AS percentage_change
