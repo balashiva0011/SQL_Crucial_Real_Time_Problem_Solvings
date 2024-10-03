@@ -1,7 +1,8 @@
 📝 Question 15: 
 """Imagine you are a data analyst at Atliq Exclusive. You are tasked with determining which segment experienced the greatest increase in unique products from 2020 to 2021. This analysis is crucial for refining marketing strategies and assessing market expansion within the APAC region."""
 
-Solution 15: WITH ProductCounts2020 AS (
+Solution 15: 
+WITH ProductCounts2020 AS (
  SELECT 
  P.segment AS segment,
  COUNT(DISTINCT FS.product_code) AS product_count_2020
