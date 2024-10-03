@@ -1,7 +1,8 @@
 📝 Question 14: 
 """As a data analyst, your task is to analyze the gross sales by each sales channel for the fiscal year 2021. Identify the channel with the highest sales and calculate its percentage contribution to the total gross sales, rounding this figure to two decimal places. This detailed insight will aid in strategic planning for the upcoming fiscal year."""
 
-Solution 14: WITH sales_summary AS (
+Solution 14:
+ WITH sales_summary AS (
  SELECT 
  c.channel,
  SUM(f.sold_quantity * g.gross_price) AS gross_sales
