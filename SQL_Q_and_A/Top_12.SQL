@@ -2,7 +2,8 @@
 """Imagine you are a data analyst at Atliq Exclusive. Your task is to analyze the quarterly total sold quantities for the fiscal year 2020. This analysis will pinpoint the quarter with the highest total sold quantities, crucial for understanding peak sales periods and informing future inventory and marketing strategies.
 Note: The fiscal year at AtliQ starts in September and ends in August."""
 
-Solution 12: SELECT 
+Solution 12: 
+SELECT 
  CONCAT('Q', CEILING(month_num / 3)) AS quarter, 
  SUM(sold_quantity) AS total_sold_quantity 
 FROM 
