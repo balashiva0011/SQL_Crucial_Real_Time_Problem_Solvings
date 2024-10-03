@@ -1,7 +1,8 @@
 📝 Question 13: 
 """Imagine you are a data analyst at Atliq Exclusive. Your task is to identify the top 3 products in each division with the highest total sold quantities for the fiscal year 2021. This analysis is crucial for understanding product performance across divisions, facilitating informed decision-making."""
 
-Solution 13: WITH division_rank AS (
+Solution 13: 
+WITH division_rank AS (
  SELECT 
  p.division,
  f.product_code,
