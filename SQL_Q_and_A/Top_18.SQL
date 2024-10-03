@@ -1,7 +1,8 @@
 📝 Question 18: 
 """Imagine you are a data analyst at Atliq Exclusive. Your task is to identify the top 5 customers in the Indian market who received the highest average pre-invoice discount percentages for the fiscal year 2021. This information is crucial for understanding customer behavior and optimizing discount."""
 
-Solution 18: SELECT 
+Solution 18: 
+SELECT 
  c.customer AS customer_name,
  c.customer_code,
  ROUND(AVG(f.pre_invoice_discount_pct),4) AS average_discount_percentage
